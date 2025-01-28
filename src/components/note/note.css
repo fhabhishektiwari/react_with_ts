@@ -1,13 +1,5 @@
-/* .high {
-  background-color: #ffb266;
+.right-icons {
+  position: absolute;
+  right: 8px;
+  top: 8px;
 }
-
-.medium {
-  background-color: #ffff00;
-}
-.low {
-  background-color: #008000;
-}
-.urgent {
-  background-color: #ff0000;
-} */
