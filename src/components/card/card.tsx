@@ -1,3 +1,5 @@
+import { useContext } from "react";
+import { themeContext } from "../../context/theme/theme";
 import "./card.css";
 
 type CardProps = {
@@ -7,9 +9,10 @@ type CardProps = {
   padding?: string;
 };
 const Card = (props: CardProps) => {
+  const theme = useContext(themeContext);
   return (
     <div
-      className="card"
+      className={`card ${theme === "dark" ? "dark" : "light"}`}
       style={{
         backgroundColor: props.bgColor,
         height: `${props.height}rem`,

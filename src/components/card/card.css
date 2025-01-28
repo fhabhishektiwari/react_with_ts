@@ -2,10 +2,20 @@
   border: 1px solid #ccc;
   padding: 2rem;
   font-size: 1rem;
-  color: #333;
+  /* color: #333; */
   height: 10rem;
   border-radius: 1rem;
   /* background-color: rgb(165, 211, 197); */
   margin-top: 10px;
   position: relative;
+}
+
+.card.light {
+  background-color: #fff;
+  color: #333;
+}
+
+.card.dark {
+  background-color: #333;
+  color: #fff;
 }

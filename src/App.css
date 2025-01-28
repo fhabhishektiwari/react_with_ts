@@ -1,12 +1,4 @@
-.App{
-  margin: 0px 0.8rem;
-  text-align: center;
-}
-
-.note-app{
-  padding: 1rem;
-  font-size: 1rem;
-  color: #333;
-  margin-top: 10px;
-  background-color: rgb(198, 227, 252);
+.react-switch{
+  position: absolute !important;
+  right: 0px;
 }

@@ -1,0 +1,23 @@
+.home {
+  /* margin: 0px 0.8rem; */
+  text-align: center;
+}
+
+.home.light {
+  background-color: #fff;
+  color: #333;
+}
+
+.home.dark {
+  background-color: #333;
+  color: #fff;
+}
+
+.note-app {
+  padding: 1rem;
+  font-size: 1rem;
+  margin: 0px;
+  /* color: #333; */
+  /* margin-top: 10px; */
+  /* background-color: rgb(198, 227, 252); */
+}
