@@ -6,6 +6,7 @@ import { themeContext } from "../../context/theme/theme";
 import { StateContext } from "../../context/state/state";
 import { ADD_NOTE, SET_EDIT_MODE, UPDATE_NOTE } from "../../actions";
 import "./add-note.css";
+import { addNote, updateNote } from "../../services/note-service";
 
 const AddNote = () => {
   const theme = useContext(themeContext);
@@ -31,28 +32,38 @@ const AddNote = () => {
     }
   }, [state.noteToBeEditted, state.editMode]);
 
-  const handleClick = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
+  const handleClick = async (
+    e: React.MouseEvent<HTMLButtonElement, MouseEvent>
+  ) => {
     e.preventDefault();
     if (!text.trim()) return;
     if (state.editMode) {
+      const updatedData = {
+        id: state.noteToBeEditted!.id,
+        text: text,
+        priority: priority,
+      };
+      const updatedNote = await updateNote(
+        state.noteToBeEditted!.id,
+        updatedData
+      );
+
       dispatch({
         type: UPDATE_NOTE,
-        payload: {
-          id: state.noteToBeEditted!.id,
-          text: text,
-          priority: priority,
-        },
+        payload: updatedNote,
       });
       dispatch({ payload: false, type: SET_EDIT_MODE });
       setText("");
       setPriority("low");
     } else {
+      const noteData = {
+        id: uuidv4(),
+        text: text,
+        priority: priority,
+      };
+      const note = await addNote(noteData);
       dispatch({
-        payload: {
-          id: uuidv4(),
-          text: text,
-          priority: priority,
-        },
+        payload: note,
         type: ADD_NOTE,
       });
     }

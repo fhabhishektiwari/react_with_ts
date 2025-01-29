@@ -1,0 +1,24 @@
+{
+  "notes": [
+    {
+      "id": "32c5c357-f1a2-46a3-9071-b6508cf73f27",
+      "text": "Note 1 from db (updated)",
+      "priority": "low"
+    },
+    {
+      "id": "67ece824-f403-423d-a1e0-ef7251353214",
+      "text": "Note 2 from db (updated note)",
+      "priority": "medium"
+    },
+    {
+      "id": "425819eb-c82c-44a2-8739-bc0cb8637765",
+      "text": "Note 3 from Db",
+      "priority": "high"
+    },
+    {
+      "id": "9b798882-af45-4077-91d4-0f2023855ca3",
+      "text": "Note 4 from db",
+      "priority": "urgent"
+    }
+  ]
+}
