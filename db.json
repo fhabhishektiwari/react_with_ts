@@ -1,24 +1,39 @@
 {
   "notes": [
     {
-      "id": "32c5c357-f1a2-46a3-9071-b6508cf73f27",
-      "text": "Note 1 from db (updated)",
-      "priority": "low"
+      "id": "3fd45547-13b0-4871-9109-f825a130b4db",
+      "text": "Note 1 (updated***)",
+      "priority": "low",
+      "createdAt": "2025-01-30T01:31:04.701Z",
+      "updatedAt": "2025-01-30T01:34:35.817Z"
     },
     {
-      "id": "67ece824-f403-423d-a1e0-ef7251353214",
-      "text": "Note 2 from db (updated note)",
-      "priority": "medium"
+      "id": "733170f6-1024-4adc-99c9-e4c012e225c9",
+      "text": "Note 2",
+      "priority": "medium",
+      "createdAt": "2025-01-30T01:31:13.833Z",
+      "updatedAt": "2025-01-30T01:31:13.833Z"
     },
     {
-      "id": "425819eb-c82c-44a2-8739-bc0cb8637765",
-      "text": "Note 3 from Db",
-      "priority": "high"
+      "id": "5a6bf991-ac9b-4205-9aa5-59bc909d767d",
+      "text": "Note 3",
+      "priority": "high",
+      "createdAt": "2025-01-30T01:31:21.497Z",
+      "updatedAt": "2025-01-30T01:31:21.497Z"
     },
     {
-      "id": "9b798882-af45-4077-91d4-0f2023855ca3",
-      "text": "Note 4 from db",
-      "priority": "urgent"
+      "id": "98f8ee00-a833-469a-b1f8-f66a5aa27515",
+      "text": "Note 4 ***",
+      "priority": "urgent",
+      "createdAt": "2025-01-30T01:31:31.545Z",
+      "updatedAt": "2025-01-30T01:34:22.165Z"
+    },
+    {
+      "id": "1b574d4d-90ab-4c7d-be73-7783191c7795",
+      "text": "Note 5",
+      "priority": "medium",
+      "createdAt": "2025-01-30T01:31:42.136Z",
+      "updatedAt": "2025-01-30T01:31:42.136Z"
     }
   ]
 }

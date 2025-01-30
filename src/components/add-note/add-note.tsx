@@ -42,6 +42,8 @@ const AddNote = () => {
         id: state.noteToBeEditted!.id,
         text: text,
         priority: priority,
+        createdAt: state.noteToBeEditted!.createdAt,
+        updatedAt: new Date(),
       };
       const updatedNote = await updateNote(
         state.noteToBeEditted!.id,
@@ -60,6 +62,8 @@ const AddNote = () => {
         id: uuidv4(),
         text: text,
         priority: priority,
+        createdAt: new Date(),
+        updatedAt: new Date(),
       };
       const note = await addNote(noteData);
       dispatch({

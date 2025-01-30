@@ -18,6 +18,8 @@ const Home = () => {
           id={note.id}
           text={note.text}
           priority={note.priority}
+          createdAt={note.createdAt}
+          updatedAt={note.updatedAt}
           note={note}
         />
       ))}

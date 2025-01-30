@@ -3,3 +3,13 @@
   right: 8px;
   top: 8px;
 }
+
+.left-corner {
+  position: absolute;
+  left: 8px;
+  top: 8px;
+}
+
+.date {
+  font-size: 0.8rem;
+}
